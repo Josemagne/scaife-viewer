@@ -2,5 +2,5 @@ FROM node:12.13-alpine AS static
 WORKDIR /opt/scaife-viewer/src/
 COPY package.json package-lock.json ./
 RUN npm ci
-COPY webpack.config.js .babelrc ./
+COPY webpack.config.js babel.config.js ./
 CMD npm run start
