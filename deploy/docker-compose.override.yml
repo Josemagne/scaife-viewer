@@ -12,7 +12,7 @@ services:
       - 7000:7000
     environment:
       - DEBUG=1
-      - USE_ELASTICSEARCH_SERVICE=1
+      - USE_ELASTICSEARCH_SERVICE=0
     volumes:
       - webpack-stats:/opt/scaife-viewer/src/static/stats
       - ..:/opt/scaife-viewer/src/
